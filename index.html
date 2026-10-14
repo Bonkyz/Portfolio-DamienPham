@@ -1,15 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA Compatible"
-    content="IE=edge">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damien Pham — Portfolio BTS SIO SISR</title>
+  <meta name="description" content="Portfolio de Damien Pham, étudiant en BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Mon Portfolio</h1>
-</body>
 
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">Damien <span>Pham</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="veille.html">Veille &amp; certifs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Accueil ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="tag">BTS SIO — option SISR</span>
+          <h1>Damien Pham</h1>
+          <p class="lead">
+            Étudiant en BTS Services Informatiques aux Organisations, spécialité
+            Solutions d'Infrastructure, Systèmes et Réseaux. Je m'intéresse à
+            l'administration système, aux réseaux et à la cybersécurité.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="realisations.html">Voir mes réalisations</a>
+            <a class="btn btn-outline" href="assets/CV-Damien-Pham.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+          </div>
+        </div>
+        <dl class="hero-card">
+          <dt>formation</dt>
+          <dd>BTS SIO SISR — <span class="todo">établissement à compléter</span></dd>
+          <dt>alternance</dt>
+          <dd><span class="todo">entreprise à compléter</span></dd>
+          <dt>session</dt>
+          <dd><span class="todo">année d'examen à compléter</span></dd>
+          <dt>recherche</dt>
+          <dd><span class="todo">ex. : poursuite d'études / poste admin sys</span></dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section id="a-propos">
+      <div class="container">
+        <p class="section-label">À propos</p>
+        <h2>Qui suis-je ?</h2>
+        <p class="lead">
+          <span class="todo">Présente-toi en 3 ou 4 phrases : ton parcours, pourquoi l'option SISR,
+          ce qui te plaît dans l'infra et ce que tu veux faire après le BTS.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Parcours ===== -->
+    <section id="parcours">
+      <div class="container grid grid-2">
+        <div>
+          <p class="section-label">Parcours</p>
+          <h2>Formation</h2>
+          <ol class="timeline">
+            <li>
+              <span class="date"><span class="todo">20XX – 20XX</span></span>
+              <h3>BTS SIO option SISR</h3>
+              <p><span class="todo">Établissement, ville</span></p>
+            </li>
+            <li>
+              <span class="date"><span class="todo">20XX</span></span>
+              <h3><span class="todo">Baccalauréat …</span></h3>
+              <p><span class="todo">Lycée, ville</span></p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <p class="section-label">Expérience</p>
+          <h2>Expérience professionnelle</h2>
+          <ol class="timeline">
+            <li>
+              <span class="date"><span class="todo">20XX – aujourd'hui</span></span>
+              <h3>Alternance</h3>
+              <p><span class="todo">Entreprise — poste</span> · <a href="entreprise.html">en savoir plus</a></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Compétences techniques ===== -->
+    <section id="competences">
+      <div class="container">
+        <p class="section-label">Compétences</p>
+        <h2>Compétences techniques</h2>
+        <div class="grid grid-3" style="margin-top: 28px;">
+          <div class="card skill-group">
+            <h3>Systèmes</h3>
+            <ul class="chips">
+              <li>Windows Server</li><li>Active Directory</li><li>GPO</li>
+              <li>Linux (Debian)</li><li>Bash</li><li>PowerShell</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Réseaux</h3>
+            <ul class="chips">
+              <li>TCP/IP</li><li>VLAN</li><li>Routage</li>
+              <li>DHCP</li><li>DNS</li><li>Cisco IOS</li><li>Packet Tracer</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Sécurité</h3>
+            <ul class="chips">
+              <li>pfSense</li><li>Pare-feu</li><li>VPN</li><li>Sauvegardes</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Virtualisation</h3>
+            <ul class="chips">
+              <li>VirtualBox</li><li>Proxmox</li><li>VMware</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Services &amp; outils</h3>
+            <ul class="chips">
+              <li>GLPI</li><li>Git / GitHub</li><li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Langues</h3>
+            <ul class="chips">
+              <li>Français</li><li><span class="todo">Anglais — niveau ?</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label">Contact</p>
+        <h2>Me contacter</h2>
+        <ul class="contact-list">
+          <li><span class="k">e-mail</span> <span class="todo">adresse@exemple.fr</span></li>
+          <li><span class="k">linkedin</span> <span class="todo">lien LinkedIn</span></li>
+          <li><span class="k">github</span> <a href="https://github.com/Bonkyz" target="_blank" rel="noopener">github.com/Bonkyz</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year></span> Damien Pham — Portfolio BTS SIO SISR</span>
+      <a href="https://github.com/Bonkyz/Portfolio-DamienPham" target="_blank" rel="noopener">Code source</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

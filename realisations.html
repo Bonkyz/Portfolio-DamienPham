@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations professionnelles — Damien Pham</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">Damien <span>Pham</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="veille.html">Veille &amp; certifs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <p class="section-label">Épreuve E5</p>
+        <h1>Réalisations professionnelles</h1>
+        <p>Projets menés en formation, en alternance et en stage, avec les compétences du bloc 1
+        qu'ils mobilisent.</p>
+      </div>
+    </div>
+
+    <!-- ===== Cartes (générées depuis js/data.js) ===== -->
+    <section>
+      <div class="container">
+        <div class="filters" id="realisations-filters" role="group" aria-label="Filtrer par contexte"></div>
+        <div class="grid grid-2" id="realisations-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Tableau de synthèse (généré depuis js/data.js) ===== -->
+    <section id="tableau-synthese">
+      <div class="container">
+        <p class="section-label">Bloc 1 — Support et mise à disposition de services informatiques</p>
+        <h2>Tableau de synthèse</h2>
+        <p class="lead">Correspondance entre mes réalisations et les compétences du bloc 1.</p>
+        <div class="table-wrap">
+          <table class="synthese" id="synthese"></table>
+        </div>
+        <dl class="legend" id="synthese-legend"></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year></span> Damien Pham — Portfolio BTS SIO SISR</span>
+      <a href="https://github.com/Bonkyz/Portfolio-DamienPham" target="_blank" rel="noopener">Code source</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
